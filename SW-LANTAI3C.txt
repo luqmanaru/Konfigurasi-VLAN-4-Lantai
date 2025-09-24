@@ -1,0 +1,11 @@
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname SW-LANTAI3C
+SW-LANTAI3C(config)#vlan 10
+SW-LANTAI3C(config-vlan)#name Interkoneksi
+SW-LANTAI3C(config-vlan)#exit
+SW-LANTAI3C(config)#interface range fa0/1-8
+SW-LANTAI3C(config-if-range)#switchport mode trunk
+SW-LANTAI3C(config-if-range)#exit
+SW-LANTAI3C(config)#exit
+SW-LANTAI3C#write memory
