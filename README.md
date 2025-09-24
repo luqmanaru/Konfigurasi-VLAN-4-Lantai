@@ -34,6 +34,8 @@ Tugas ini bertujuan untuk mengimplementasikan jaringan VLAN pada SMK Maju Jaya y
                      +--------------+
 ```
 
+<img width="827" height="473" alt="image" src="https://github.com/user-attachments/assets/dfdec72c-1f89-4dd6-a517-5a2e494c5904" />
+
 ## Pembagian VLAN
 
 | VLAN ID | Nama VLAN    | Ruangan           | Jumlah PC | IP Network       | DHCP |
