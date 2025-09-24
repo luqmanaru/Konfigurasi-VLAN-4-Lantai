@@ -1,0 +1,15 @@
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname SW-LANTAI2A
+SW-LANTAI2A(config)#vlan 30
+SW-LANTAI2A(config-vlan)#name TU
+SW-LANTAI2A(config-vlan)#exit
+SW-LANTAI2A(config)#interface range fa0/1-10
+SW-LANTAI2A(config-if-range)#switchport mode access
+SW-LANTAI2A(config-if-range)#switchport access vlan 30
+SW-LANTAI2A(config-if-range)#exit
+SW-LANTAI2A(config)#interface fa0/24
+SW-LANTAI2A(config-if)#switchport mode trunk
+SW-LANTAI2A(config-if)#exit
+SW-LANTAI2A(config)#exit
+SW-LANTAI2A#write memory
