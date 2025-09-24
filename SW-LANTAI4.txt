@@ -1,0 +1,15 @@
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname SW-LANTAI4
+SW-LANTAI4(config)#vlan 10
+SW-LANTAI4(config-vlan)#name Teknisi
+SW-LANTAI4(config-vlan)#exit
+SW-LANTAI4(config)#interface range fa0/1-2
+SW-LANTAI4(config-if-range)#switchport mode access
+SW-LANTAI4(config-if-range)#switchport access vlan 10
+SW-LANTAI4(config-if-range)#exit
+SW-LANTAI4(config)#interface fa0/24
+SW-LANTAI4(config-if)#switchport mode trunk
+SW-LANTAI4(config-if)#exit
+SW-LANTAI4(config)#exit
+SW-LANTAI4#write memory
