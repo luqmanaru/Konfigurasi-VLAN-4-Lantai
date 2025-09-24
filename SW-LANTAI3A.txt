@@ -1,0 +1,15 @@
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname SW-LANTAI3A
+SW-LANTAI3A(config)#vlan 30
+SW-LANTAI3A(config-vlan)#name Lab1
+SW-LANTAI3A(config-vlan)#exit
+SW-LANTAI3A(config)#interface range fa0/1-24
+SW-LANTAI3A(config-if-range)#switchport mode access
+SW-LANTAI3A(config-if-range)#switchport access vlan 30
+SW-LANTAI3A(config-if-range)#exit
+SW-LANTAI3A(config)#interface fa0/24
+SW-LANTAI3A(config-if)#switchport mode trunk
+SW-LANTAI3A(config-if)#exit
+SW-LANTAI3A(config)#exit
+SW-LANTAI3A#write memory
