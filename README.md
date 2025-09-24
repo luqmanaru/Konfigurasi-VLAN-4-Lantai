@@ -1,7 +1,5 @@
 # Konfigurasi-VLAN-4-Lantai
 
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-
 Implementasi jaringan VLAN untuk SMK Maju Jaya yang terdiri dari 4 lantai dengan berbagai ruangan dan konfigurasi DHCP.
 
 ## Deskripsi
